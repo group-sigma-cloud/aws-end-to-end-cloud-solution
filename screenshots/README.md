@@ -15,4 +15,3 @@ This directory stores genuine screenshots showing the implementation and verific
  
 Screenshots will be added after the corresponding configurations have been completed.
  
-Do not add sample images or screenshots that could be mistaken for actual project evidence.
