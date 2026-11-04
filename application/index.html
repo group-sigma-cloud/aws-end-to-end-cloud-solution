@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Group Sigma AWS cloud solution project">
+<title>Group Sigma | Cloud Solution</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<a class="brand" href="#">GROUP SIGMA</a>
+<nav aria-label="Main navigation">
+<a href="#about">About</a>
+<a href="#architecture">Architecture</a>
+<a href="#services">AWS Services</a>
+</nav>
+</div>
+</header>
+ 
+  <main>
+<section class="hero">
+<div class="container">
+<p class="eyebrow">AWS END-TO-END CLOUD SOLUTION</p>
+<h1>Building and demonstrating a cloud-hosted application</h1>
+<p>
+          Welcome to Group Sigma's cloud project. This sample website
+          provides an application interface for our AWS deployment work.
+</p>
+<a class="button" href="#services">Explore the project</a>
+</div>
+</section>
+ 
+    <section id="about" class="section container">
+<h2>About the project</h2>
+<p>
+        Our project explores how AWS services can work together to host,
+        distribute, secure, monitor and manage a web application.
+</p>
+</section>
+ 
+    <section id="architecture" class="section container">
+<h2>Planned architecture</h2>
+<div class="architecture">
+<div class="service">CloudFront</div>
+<span aria-hidden="true">↓</span>
+<div class="service">Application Load Balancer</div>
+<span aria-hidden="true">↓</span>
+<div class="service">Amazon EC2</div>
+</div>
+<p class="note">
+        This illustrates the intended traffic flow. The deployed
+        architecture must be confirmed against the actual AWS environment.
+</p>
+</section>
+ 
+    <section id="services" class="section container">
+<h2>AWS services in scope</h2>
+<div class="cards">
+<article class="card">
+<h3>Amazon EC2</h3>
+<p>Compute capacity for hosting the application.</p>
+</article>
+<article class="card">
+<h3>Application Load Balancer</h3>
+<p>Distributes incoming application traffic to targets.</p>
+</article>
+<article class="card">
+<h3>Amazon CloudFront</h3>
+<p>Content delivery and caching at edge locations.</p>
+</article>
+<article class="card">
+<h3>Amazon S3</h3>
+<p>Object storage for project assets and other content.</p>
+</article>
+</div>
+</section>
+ 
+    <section class="section container status">
+<h2>Project status</h2>
+<p id="status-message">
+        This is the starter application. AWS deployment is not yet verified.
+</p>
+<button id="status-button" type="button">Check application</button>
+</section>
+</main>
+ 
+  <footer>
+<div class="container">
+<p>Group Sigma | AWS End-to-End Cloud Solution</p>
+<p>Educational project starter application.</p>
+</div>
+</footer>
+</body>
+</html>
