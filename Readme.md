@@ -136,14 +136,11 @@ AWS BUDGETS
     v
 Budget notifications
 ```
+
  
-The architecture diagram should also be available as an image in the repository at:
+**Diagram note:** The diagrams above describe the intended traffic and deployment flow. 
  
-`docs/architecture.png`
- 
-**Diagram note:** The diagrams above describe the intended traffic and deployment flow. The exported `docs/architecture.png` should be the final visual architecture diagram used for project evidence and presentations.
- 
-![Group Sigma AWS Architecture](docs/architecture.png)
+![Group Sigma AWS Architecture](https://github.com/group-sigma-cloud/aws-end-to-end-cloud-solution/blob/main/docs/Architecture%20Diagram.png)
  
 ## 4. AWS Services and Their Purpose
  
