@@ -1,96 +1,398 @@
-# AWS End-to-End Cloud Solution
- 
-## Project Overview
- 
-This repository documents Group Sigma's end-to-end cloud solution project using Amazon Web Services (AWS).
- 
-The project is intended to demonstrate the design, deployment, security, monitoring, and delivery of a cloud-hosted application.
- 
-## Project Objectives
- 
-- Deploy a web application on AWS.
+# \# AWS End-to-End Cloud Solution
 
-- Configure an Application Load Balancer (ALB).
+# 
 
-- Run application workloads on Amazon EC2.
+# \## Project Overview
 
-- Use Amazon S3 for applicable storage needs.
+# 
 
-- Configure Amazon CloudFront for content delivery.
+# This repository documents Group Sigma's end-to-end cloud solution project using Amazon Web Services (AWS).
 
-- Secure the solution using AWS IAM and appropriate network controls.
+# 
 
-- Explore automated deployment using GitHub Actions.
+# The project demonstrates cloud application development, infrastructure planning, security considerations, monitoring, cost management, version control, and automated quality checks.
 
-- Configure monitoring and cost management.
- 
-## Architecture
- 
-**Planned architecture:** CloudFront → Application Load Balancer → EC2.
- 
-Amazon S3 may be used as an additional storage or content origin, depending on the implemented design.
- 
-Architecture diagram: *To be added.*
- 
-## AWS Services
- 
-| Service | Intended role | Implementation status |
+# 
 
-|---|---|---|
+# \## Project Objectives
 
-| Amazon EC2 | Application compute | To be verified |
+# 
 
-| Application Load Balancer | Traffic distribution | To be verified |
+# \- Design and deploy a web application on AWS.
 
-| Amazon CloudFront | Content delivery | To be verified |
+# \- Configure an Application Load Balancer (ALB).
 
-| Amazon S3 | Object storage | To be verified |
+# \- Run application workloads on Amazon EC2.
 
-| AWS Certificate Manager | TLS certificates | To be verified |
+# \- Use Amazon S3 for applicable storage needs.
 
-| AWS IAM | Access management | To be verified |
+# \- Configure Amazon CloudFront for content delivery.
 
-| Amazon CloudWatch | Monitoring | To be verified |
+# \- Apply AWS IAM and appropriate network security controls.
 
-| AWS Budgets | Cost monitoring | To be verified |
- 
-## Repository Structure
- 
-The project documentation, application source, architecture materials, screenshots, and automation workflows will be organized here as they are added.
- 
-## Deployment
- 
-Deployment instructions and verified environment details will be documented here.
- 
-## Security
- 
-Security decisions, access controls, TLS configuration, and relevant implementation evidence will be documented here.
- 
-## CI/CD
- 
-GitHub Actions automation will be documented here if implemented.
- 
-## Monitoring and Cost Management
- 
-CloudWatch monitoring and AWS Budgets configuration will be documented here when completed and verified.
- 
-## Screenshots and Evidence
- 
-Screenshots and other project evidence will be added as implementation progresses. No deployment results are claimed until verified.
- 
-## Project Status
- 
-**Status:** Repository created; project implementation and evidence to be documented.
- 
-Items will be identified as planned, in progress, completed, or verified so that documentation accurately reflects the actual project.
- 
-## Team
- 
-**Group:** Group Sigma
- 
-Team member contributions will be recorded as work is completed.
- 
-## Final Deployment URL
- 
-*To be added after deployment and verification.*
- 
+# \- Implement GitHub Actions for automated application validation.
+
+# \- Document monitoring and cost management.
+
+# \- Apply collaborative Git workflows using feature branches and pull requests.
+
+# 
+
+# \## Architecture
+
+# 
+
+# \*\*Planned architecture:\*\*
+
+# 
+
+# CloudFront → Application Load Balancer → EC2
+
+# 
+
+# Amazon S3 is considered for additional storage or content delivery, depending on the implemented design.
+
+# 
+
+# \*\*Architecture diagram:\*\* To be added.
+
+# 
+
+# Infrastructure components and their configurations will be marked as verified only when supporting evidence is available.
+
+# 
+
+# \## AWS Services
+
+# 
+
+# | Service | Intended role | Status |
+
+# |---|---|---|
+
+# | Amazon EC2 | Application compute | Verification pending |
+
+# | Application Load Balancer | Traffic distribution | Verification pending |
+
+# | Amazon CloudFront | Content delivery | Verification pending |
+
+# | Amazon S3 | Object storage | Verification pending |
+
+# | AWS Certificate Manager | TLS certificates | Verification pending |
+
+# | AWS IAM | Access management | Verification pending |
+
+# | Amazon CloudWatch | Monitoring | Documentation present; configuration verification pending |
+
+# | AWS Budgets | Cost monitoring | Documentation present; configuration verification pending |
+
+# 
+
+# \## Application
+
+# 
+
+# The application is maintained in the `application/` directory.
+
+# 
+
+# Current application files:
+
+# 
+
+# \- `index.html` — application structure.
+
+# \- `style.css` — application styling.
+
+# \- `script.js` — application interactions.
+
+# \- `README.md` — application documentation.
+
+# 
+
+# The local application validation script confirms that the required files, local references, and expected HTML sections are present.
+
+# 
+
+# \## Repository Structure
+
+# 
+
+# ```text
+
+# aws-end-to-end-cloud-solution/
+
+# │
+
+# ├── .github/
+
+# │   └── workflows/
+
+# │       ├── ci.yml
+
+# │       └── README.md
+
+# │
+
+# ├── application/
+
+# │   ├── index.html
+
+# │   ├── style.css
+
+# │   ├── script.js
+
+# │   └── README.md
+
+# │
+
+# ├── aws/
+
+# │   ├── alb.md
+
+# │   ├── budget-management.md
+
+# │   ├── monitoring.md
+
+# │   └── README.md
+
+# │
+
+# ├── docs/
+
+# │   └── README.md
+
+# │
+
+# ├── screenshots/
+
+# │   └── README.md
+
+# │
+
+# ├── scripts/
+
+# │   ├── validate\_site.py
+
+# │   ├── create-feature.ps1
+
+# │   ├── commit-changes.ps1
+
+# │   └── push-feature.ps1
+
+# │
+
+# ├── GIT\_WORKFLOW.md
+
+# └── Readme.md
+
+# ```
+
+# 
+
+# \## GitHub Actions and CI
+
+# 
+
+# The repository includes a GitHub Actions workflow at:
+
+# 
+
+# `.github/workflows/ci.yml`
+
+# 
+
+# The workflow automatically validates the application and checks the presence of key project documentation.
+
+# 
+
+# The validation script is:
+
+# 
+
+# ```powershell
+
+# python scripts\\validate\_site.py
+
+# ```
+
+# 
+
+# The local validation checks include:
+
+# 
+
+# \- Required application files.
+
+# \- CSS and JavaScript file references.
+
+# \- Expected HTML sections.
+
+# \- Project documentation files.
+
+# 
+
+# \*\*Current status:\*\* Local validation passes, and the GitHub Actions workflow has recorded successful runs.
+
+# 
+
+# Note: This workflow performs quality checks. It is not currently being presented as an automated AWS deployment workflow.
+
+# 
+
+# \## Git Automation and Collaboration
+
+# 
+
+# Group Sigma uses feature branches and pull requests to manage changes.
+
+# 
+
+# The repository includes three PowerShell automation scripts:
+
+# 
+
+# | Script | Purpose |
+
+# |---|---|
+
+# | `create-feature.ps1` | Creates feature branches from updated `develop`. |
+
+# | `commit-changes.ps1` | Stages and commits changes using a supplied message. |
+
+# | `push-feature.ps1` | Pushes feature branches to GitHub. |
+
+# 
+
+# The `GIT\_WORKFLOW.md` file documents the team's Git collaboration process.
+
+# 
+
+# \### Merged Pull Requests
+
+# 
+
+# | Pull Request | Contribution | Status |
+
+# |---|---|---|
+
+# | #10 | Application asset structure correction | Merged |
+
+# | #11 | GitHub Actions CI workflow | Merged |
+
+# | #12 | Git automation scripts and team workflow guide | Merged |
+
+# 
+
+# \## Security
+
+# 
+
+# Security documentation and implementation evidence will cover:
+
+# 
+
+# \- IAM access management.
+
+# \- Network security controls.
+
+# \- Application and infrastructure access.
+
+# \- TLS configuration.
+
+# \- Appropriate AWS permissions.
+
+# 
+
+# Configuration claims will be updated as implementation evidence becomes available.
+
+# 
+
+# \## Monitoring and Cost Management
+
+# 
+
+# The `aws/` directory contains documentation covering:
+
+# 
+
+# \- Application Load Balancer.
+
+# \- AWS Budgets.
+
+# \- Monitoring.
+
+# 
+
+# Actual CloudWatch alarms, notifications, and budget configurations must be verified against the AWS environment before being marked as completed.
+
+# 
+
+# \## Screenshots and Evidence
+
+# 
+
+# The `screenshots/` directory is reserved for project implementation evidence, including:
+
+# 
+
+# \- AWS infrastructure configuration.
+
+# \- Application deployment.
+
+# \- GitHub Actions workflow results.
+
+# \- Pull requests and code reviews.
+
+# \- Monitoring and cost management configurations.
+
+# 
+
+# \## Project Status
+
+# 
+
+# \*\*Current status:\*\* Application source, GitHub Actions validation, and Git automation have been implemented and merged into the `develop` branch.
+
+# 
+
+# The local website validator passes, and the GitHub Actions workflow has recorded successful runs.
+
+# 
+
+# AWS infrastructure implementation and deployment verification remain separate project milestones.
+
+# 
+
+# Project activities will be classified as:
+
+# 
+
+# \- Planned
+
+# \- In progress
+
+# \- Completed
+
+# \- Verified
+
+# 
+
+# \## Team
+
+# 
+
+# \*\*Group:\*\* Group Sigma
+
+# 
+
+# Individual team contributions will be documented as project evidence is consolidated.
+
+# 
+
+# \## Final Deployment URL
+
+# 
+
+# To be confirmed and documented alongside current deployment verification evidence.
+
