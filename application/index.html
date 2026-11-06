@@ -1,97 +1,284 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Group Sigma AWS cloud solution project">
-<title>Group Sigma | Cloud Solution</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Group Sigma - AWS End-to-End Cloud Solution">
+  <meta name="theme-color" content="#080d1b">
+
+  <title>Group Sigma | Cloud Infrastructure</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-<header class="site-header">
-<div class="container">
-<a class="brand" href="#">GROUP SIGMA</a>
-<nav aria-label="Main navigation">
-<a href="#about">About</a>
-<a href="#architecture">Architecture</a>
-<a href="#services">AWS Services</a>
-</nav>
-</div>
-</header>
- 
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark">Σ</span>
+        <span>GROUP <strong>SIGMA</strong></span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">Overview</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#services">AWS Services</a>
+      </nav>
+
+      <a href="#architecture" class="header-cta">Explore Platform <span>↗</span></a>
+    </div>
+  </header>
+
   <main>
-<section class="hero">
-<div class="container">
-<p class="eyebrow">AWS END-TO-END CLOUD SOLUTION</p>
-<h1>Building and demonstrating a cloud-hosted application</h1>
-<p>
-          Welcome to Group Sigma's cloud project. This sample website
-          provides an application interface for our AWS deployment work.
-</p>
-<a class="button" href="#services">Explore the project</a>
-</div>
-</section>
- 
-    <section id="about" class="section container">
-<h2>About the project</h2>
-<p>
-        Our project explores how AWS services can work together to host,
-        distribute, secure, monitor and manage a web application.
-</p>
-</section>
- 
-    <section id="architecture" class="section container">
-<h2>Planned architecture</h2>
-<div class="architecture">
-<div class="service">CloudFront</div>
-<span aria-hidden="true">↓</span>
-<div class="service">Application Load Balancer</div>
-<span aria-hidden="true">↓</span>
-<div class="service">Amazon EC2</div>
-</div>
-<p class="note">
-        This illustrates the intended traffic flow. The deployed
-        architecture must be confirmed against the actual AWS environment.
-</p>
-</section>
- 
-    <section id="services" class="section container">
-<h2>AWS services in scope</h2>
-<div class="cards">
-<article class="card">
-<h3>Amazon EC2</h3>
-<p>Compute capacity for hosting the application.</p>
-</article>
-<article class="card">
-<h3>Application Load Balancer</h3>
-<p>Distributes incoming application traffic to targets.</p>
-</article>
-<article class="card">
-<h3>Amazon CloudFront</h3>
-<p>Content delivery and caching at edge locations.</p>
-</article>
-<article class="card">
-<h3>Amazon S3</h3>
-<p>Object storage for project assets and other content.</p>
-</article>
-</div>
-</section>
- 
-    <section class="section container status">
-<h2>Project status</h2>
-<p id="status-message">
-        This is the starter application. AWS deployment is not yet verified.
-</p>
-<button id="status-button" type="button">Check application</button>
-</section>
-</main>
- 
-  <footer>
-<div class="container">
-<p>Group Sigma | AWS End-to-End Cloud Solution</p>
-<p>Educational project starter application.</p>
-</div>
-</footer>
+
+    <section class="hero" id="home">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            AWS CLOUD ENGINEERING PROJECT
+          </div>
+
+          <h1>
+            Engineering the
+            <span>cloud.</span>
+            Building what's next.
+          </h1>
+
+          <p class="hero-description">
+            Exploring the architecture, infrastructure and technologies
+            behind secure, scalable and reliable cloud applications.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#architecture" class="button button-primary">
+              Explore architecture <span>→</span>
+            </a>
+            <a href="#about" class="button button-secondary">
+              Discover the project
+            </a>
+          </div>
+
+          <div class="hero-caption">
+            <span>GROUP SIGMA</span>
+            <span class="caption-line"></span>
+            <span>END-TO-END CLOUD SOLUTION</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+
+          <div class="cloud-panel">
+            <div class="panel-top">
+              <span class="panel-label">CLOUD ENVIRONMENT</span>
+              <span class="panel-indicator">● PROJECT VIEW</span>
+            </div>
+
+            <div class="cloud-icon">☁</div>
+            <h2>Cloud Infrastructure</h2>
+            <p>Designed for performance. Built for scale.</p>
+
+            <div class="panel-divider"></div>
+
+            <div class="panel-metrics">
+              <div>
+                <strong>04</strong>
+                <span>Core services</span>
+              </div>
+              <div>
+                <strong>AWS</strong>
+                <span>Cloud platform</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-tag tag-top">✦ Scalable architecture</div>
+          <div class="floating-tag tag-bottom">◈ Cloud engineering</div>
+        </div>
+      </div>
+
+      <div class="container hero-bottom">
+        <span>DESIGN</span>
+        <span>BUILD</span>
+        <span>VALIDATE</span>
+        <span>DEPLOY</span>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div>
+          <p class="section-label">01 / THE PROJECT</p>
+          <h2>Technology with<br><span>purpose.</span></h2>
+        </div>
+
+        <div class="about-copy">
+          <p>
+            Group Sigma explores how Amazon Web Services can work together
+            to deliver a modern cloud-hosted application.
+          </p>
+          <p>
+            Our work covers application hosting, traffic distribution,
+            content delivery, security, monitoring and cloud operations.
+            We combine practical implementation with technical
+            documentation and collaborative engineering.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture" class="section architecture-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">02 / SYSTEM DESIGN</p>
+            <h2>Architecture <span>overview.</span></h2>
+          </div>
+          <p>
+            A conceptual view of the intended application traffic flow.
+          </p>
+        </div>
+
+        <div class="architecture-board">
+          <div class="architecture-node">
+            <div class="node-icon">◉</div>
+            <span class="node-category">CONTENT DELIVERY</span>
+            <h3>CloudFront</h3>
+            <p>Global content delivery</p>
+          </div>
+
+          <div class="architecture-connector">
+            <span></span>
+            <b>↓</b>
+          </div>
+
+          <div class="architecture-node">
+            <div class="node-icon">⇄</div>
+            <span class="node-category">TRAFFIC MANAGEMENT</span>
+            <h3>Application Load Balancer</h3>
+            <p>Incoming traffic distribution</p>
+          </div>
+
+          <div class="architecture-connector">
+            <span></span>
+            <b>↓</b>
+          </div>
+
+          <div class="architecture-node">
+            <div class="node-icon">▣</div>
+            <span class="node-category">COMPUTE</span>
+            <h3>Amazon EC2</h3>
+            <p>Application hosting environment</p>
+          </div>
+
+          <div class="architecture-footnote">
+            <span>i</span>
+            Conceptual architecture — actual AWS configuration and
+            deployment status must be verified separately.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">03 / AWS ECOSYSTEM</p>
+            <h2>Powered by <span>AWS.</span></h2>
+          </div>
+          <p>
+            Core cloud services within the scope of the Group Sigma project.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-top">
+              <span class="card-icon">▣</span>
+              <span class="card-number">01</span>
+            </div>
+            <h3>Amazon EC2</h3>
+            <p>Elastic compute capacity for hosting and running application workloads.</p>
+            <span class="card-category">COMPUTE</span>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="card-icon">◈</span>
+              <span class="card-number">02</span>
+            </div>
+            <h3>Amazon S3</h3>
+            <p>Durable object storage for application assets and project content.</p>
+            <span class="card-category">STORAGE</span>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="card-icon">◎</span>
+              <span class="card-number">03</span>
+            </div>
+            <h3>CloudFront</h3>
+            <p>Content delivery and caching to improve the user experience.</p>
+            <span class="card-category">CONTENT DELIVERY</span>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="card-icon">⇄</span>
+              <span class="card-number">04</span>
+            </div>
+            <h3>Load Balancer</h3>
+            <p>Distributes incoming application traffic across registered targets.</p>
+            <span class="card-category">NETWORKING</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section status-section">
+      <div class="container">
+        <div class="status-panel">
+          <div>
+            <p class="section-label">04 / LIVE APPLICATION CHECK</p>
+            <h2>Built to be <span>tested.</span></h2>
+            <p id="status-message">
+              The sample application is ready for a basic functionality check.
+            </p>
+          </div>
+
+          <button id="status-button" class="button button-primary" type="button">
+            Run application check →
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark">Σ</span>
+        <span>GROUP <strong>SIGMA</strong></span>
+      </a>
+
+      <p>AWS END-TO-END CLOUD SOLUTION</p>
+      <span class="footer-year">CLOUD ENGINEERING · 2026</span>
+    </div>
+  </footer>
+
 </body>
 </html>
